@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This Rails application was created to explore the functionality of Hotwire Stimulus in a Rails application.
 
-Things you may want to cover:
+The following tests were performed and are demonstrated on the main page:
 
-* Ruby version
+- Toggle Test
 
-* System dependencies
+  - Clicking button shows/hides another element
+  - Clicking button hides current element and shows another element
+  - Clicking checkbox highlights parent element
 
-* Configuration
+- Text Validation Test
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  - Display message below textbox when nearing character limit
