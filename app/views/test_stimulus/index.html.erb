@@ -11,7 +11,6 @@
   <%= button_tag "Click me to show the 1st!", data: { action: "toggle#showHide", toggle_target: "showHideElement" }, class: "hidden" %>
 
   <%# Clicking checkbox will highlight the parent of the checkbox %>
-
   <div id="checkbox-parent" data-toggle-target="highlightElement" data-target="highlightElement" >
     <%= label_tag "test-cb", "Click me to highlight parent!" %>
     <%= check_box_tag "test-cb", "test", false, data: { action: "click->toggle#highlight" } %>
@@ -19,6 +18,7 @@
 
 </div>
 
+<%# Message warning will appear when close to character limit %>
 <div class="test" data-controller="text-validate" data-text-validate-ok-class="hidden">
   <%= text_field_tag "test-close-to-max-length", "Test getting close to max length", maxlength: 280, data: { action: "text-validate#checkNearingLimit", text_validate_target: "text" } %>
   <p data-text-validate-target="message">Running out of characters!</p>
