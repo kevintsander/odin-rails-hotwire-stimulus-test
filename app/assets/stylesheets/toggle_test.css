@@ -1,0 +1,13 @@
+.test {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.highlight {
+    box-shadow: 5px 5px 15px 5px #FFF000;
+}
