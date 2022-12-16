@@ -4,10 +4,6 @@ export default class extends Controller {
   static targets = ["showHideElement", "highlightElement"];
   static classes = ["hidden", "highlight"];
 
-  connect() {
-    // this.element.textContent = "Hello World!"
-  }
-
   showHide() {
     this.showHideElementTargets.forEach((elementTarget) => {
       elementTarget.classList.toggle(this.hiddenClass);
@@ -15,7 +11,6 @@ export default class extends Controller {
   }
 
   highlight() {
-    console.log("yello");
     this.highlightElementTargets.forEach((elementTarget) => {
       elementTarget.classList.toggle(this.highlightClass);
     });
